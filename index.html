@@ -1,20 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Recipe</title>
+  <meta charset="UTF-8">
+  <title>Test Recipe</title>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Recipe",
+    "name": "Test Recipe",
+    "recipeIngredient": [
+      "1 cup flour",
+      "2 eggs",
+      "1 cup milk"
+    ],
+    "recipeInstructions": [
+      {
+        "@type": "HowToStep",
+        "text": "Mix all ingredients."
+      },
+      {
+        "@type": "HowToStep",
+        "text": "Cook until done."
+      }
+    ]
+  }
+  </script>
 </head>
+
 <body>
+  <h1>Test Recipe</h1>
+  <h2>Ingredients</h2>
+  <ul>
+    <li>1 cup flour</li>
+    <li>2 eggs</li>
+    <li>1 cup milk</li>
+  </ul>
 
-<h1>Recipe</h1>
-
-<h2>Ingredients</h2>
-<p>
-</p>
-
-<h2>Directions</h2>
-<p>
-</p>
-
+  <h2>Directions</h2>
+  <ol>
+    <li>Mix all ingredients.</li>
+    <li>Cook until done.</li>
+  </ol>
 </body>
 </html>
